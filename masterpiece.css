@@ -1,0 +1,523 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+body{
+  background: #070707;
+  min-height: 100vh;
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body::-moz-scrollbar {
+  width: 2px;
+}
+
+body::-moz-scrollbar-track {
+  background: transparent;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body::-ms-scrollbar {
+  width: 2px;
+}
+
+body::-ms-scrollbar-track {
+  background: transparent;
+}
+
+body::-ms-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container1 {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.container1 .nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  background: #121212;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.container1 .nav .logo{
+  display: none;
+  margin: 0 20px 0 20px;
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(255,255,255);
+}
+
+.container1 .nav form{
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.272);
+  padding: 4px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container1 .nav form input{
+  background: rgba(0,0,0,0);
+  border: transparent;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item.active a{
+  transform: scale(1.33);
+  color: rgb(0, 191, 255);
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item{
+  color: white;
+  list-style: none;
+  margin: 10px 20px 0 20px;
+  cursor: default;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item a{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.container1 .nav .na:hover a{
+  text-shadow: 0 2px 5px rgb(255, 255, 255);
+  transform: scale(1.33);
+  cursor: default;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item.active:hover a{
+  text-shadow: 0 2px 5px rgb(0, 191, 255);
+  cursor: default;
+}
+
+@media(min-width: 769px) {
+  .container1{
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .container1 .nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    transition: 0.5s;
+  }
+
+  .container1 .nav .nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .container1 .nav .nav-list .nav-item{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transform: none;
+    transition: 0.5s;
+    color: black;
+  }
+
+  .container1 .nav .nav-list .nav-item:hover a{
+    color: rgb(0, 0, 0);
+    transform: none;
+    cursor: default;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  .container1 .nav form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .container1 .nav form input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .ni1 {
+    background: url(images/home.jpg) center /100% no-repeat;
+  }
+
+  .ni2 {
+    background: url(images/yae\ miko.jpg) center /100% no-repeat;
+  }
+
+  .ni3 {
+    background: url(images/doujin.jpg) center / 100% no-repeat;
+  }
+
+  .ni4 {
+    background: url(images/jav.jpg) center /100% no-repeat;
+  }
+}
+
+.mascon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  flex-wrap: wrap;
+  margin: 0;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+.mascon .mascon1{
+  width: 85%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 35px 70px;
+  transition: 0.5s;
+  background: #121212;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+}
+
+.mascon .mascon1:nth-child(3){
+  border-radius: 0 0 20px 20px;
+}
+
+.mascon .mash1{
+  color: white;
+  padding-top: 30px;
+  font-size: xx-large;
+  transition: 0.5s;
+  background: #121212;
+  margin: 20px 0 0 0 ;
+  width: 85%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px 20px 0 0;
+  cursor: default;
+}
+
+.mascon .mash1:hover{
+  color: rgb(0, 191, 255);
+}
+
+.mascon .mascon1 .img{
+  width: 30%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px #888;
+  padding-top: 56.25%;
+  box-sizing: border-box;
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  margin-right: 0;
+}
+
+.img3{
+  background: url(images/masterpiece.jpg) top / 100% no-repeat;
+}
+
+.mascon .mascon1 .descshort{
+  color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 40%;
+  height: auto;
+  line-height: 2;
+  cursor: default;
+}
+
+.mascon .mascon1 .syn{
+  width: 100%;
+  height: auto;
+  padding: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  line-height: 1.5;
+}
+
+.mascon .mascon1 .vidcontainer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mascon .mascon1 .vidcontainer .vid{
+  margin: 0 30px 50px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.mascon .mascon1 .vidcontainer .vid:hover{
+  box-shadow: 0 5px 15px #888;
+}
+
+.mascon .mascon1 .downloader{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 30px 0;
+  cursor: default;
+}
+
+.mascon .mascon1 .downloader .res{
+  padding: 20px;
+  background: #040404; 
+  border-radius: 5px;
+  margin: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  cursor: default;
+}
+
+.mascon .mascon1 .downloader .res ul{
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  margin: 40px 20px 20px 20px;
+  gap: 20px;
+  cursor: default;
+}
+
+.mascon .mascon1 .downloader .res ul .platformdownload{
+  background: #555;
+  border-radius: 3px;
+  width: 100%;
+  height: auto;
+  margin: 0 20px;
+  padding: 10px;
+  list-style: none;
+  color: #0e0e0e;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+.mascon .mascon1 .downloader .res ul .platformdownload a{
+  text-decoration: none;
+  color: #0e0e0e;
+}
+
+.mascon .mascon1 .downloader .res ul .platformdownload:hover a{
+  color: rgb(0, 191, 255);
+  box-shadow: 0 2px 5px #555;
+}
+
+@media(max-width: 768px) {
+  .mascon{
+    width: 100%;
+  }
+
+  .mascon .mascon1{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .mascon .mash1{
+    border-radius: 0;
+  }
+
+  .mascon .mascon1 .img{
+    width: 100%;
+    padding-top: 100%;
+  }
+
+  .mascon .mascon1 .descshort{
+    width: 100%;
+    font-size: small;
+    line-height: 1.5;
+    margin: 20px 0;
+    box-sizing: border-box;
+    padding: 0;
+  }
+
+  .mascon .mash1{
+    font-size: medium;
+    width: 100%;
+  }
+
+  .mascon .mascon1 .syn{
+    font-size: small;
+    word-break: normal;
+    padding: 0;
+    width: 100%;
+  }
+
+  .mascon .mascon1 .downloader .res{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .mascon .mascon1 .downloader .res ul{
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+
+  .mascon .mascon1 .downloader .res ul .platformdownload{
+    margin: 0;
+    width: 100%;
+    background: #555;
+  }
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background: #121212;
+  padding: 20px;
+  margin: 0;
+  flex-direction: column;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+
+.h6footer{
+  color: white;
+  background: rgba(0,0,0,0);
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  padding: 20px 0 20px 0;
+}
+
+h5{
+  color: white;
+  font-size: large;
+  margin: 20px 0;
+}

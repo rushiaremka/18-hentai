@@ -1,0 +1,620 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+
+body{
+  background: #070707;
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  width: 2px;
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body::-moz-scrollbar {
+  width: 2px;
+}
+
+body::-moz-scrollbar-track {
+  background: transparent;
+}
+
+body::-moz-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-moz-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body::-ms-scrollbar {
+  width: 2px;
+}
+
+body::-ms-scrollbar-track {
+  background: transparent;
+}
+
+body::-ms-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+body::-ms-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container1 {
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  z-index: 2;
+}
+
+.container1 .nav{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  padding: 20px 20px 20px 20px;
+  width: 100%;
+  height: auto;
+  background: #121212;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+.container1 .nav .logo{
+  display: none;
+  margin: 0 20px 0 20px;
+  width: auto;
+  height: auto;
+  transition: 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 15px rgba(255,255,255);
+}
+
+.container1 .nav form{
+  border-radius: 5px;
+  border: 2px solid rgba(0,0,0,0.272);
+  padding: 4px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+}
+
+.container1 .nav form input{
+  background: rgba(0,0,0,0);
+  border: transparent;
+  color: white;
+  padding: 5px;
+  width: 100%;
+  max-width: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list{
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item.active a{
+  transform: scale(1.33);
+  color: rgb(0, 191, 255);
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item{
+  color: white;
+  list-style: none;
+  margin: 10px 20px 0 20px;
+  cursor: default;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item a{
+  text-decoration: none;
+  color: inherit;
+  transition: 0.5s;
+}
+
+.container1 .nav .na:hover a{
+  text-shadow: 0 2px 5px rgb(255, 255, 255);
+  transform: scale(1.33);
+  cursor: default;
+  transition: 0.5s;
+}
+
+.container1 .nav .nav-list .nav-item.active:hover a{
+  text-shadow: 0 2px 5px rgb(0, 191, 255);
+  cursor: default;
+}
+
+@media(min-width: 769px) {
+  .container1{
+    position: sticky;
+    top: 0;
+  }
+}
+
+@media(max-width: 768px) {
+  .container1 .nav{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 20px 50px 20px;
+    transition: 0.5s;
+  }
+
+  .container1 .nav .nav-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex-direction: column;
+  }
+
+  .container1 .nav .nav-list .nav-item{
+    border: 1px solid white;
+    padding: 8px;
+    border-radius: 3px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    transform: none;
+    transition: 0.5s;
+    color: black;
+  }
+
+  .container1 .nav .nav-list .nav-item:hover a{
+    color: rgb(0, 0, 0);
+    transform: none;
+    cursor: default;
+    box-sizing: border-box;
+    transition: 0.5s;
+  }
+
+  .container1 .nav form{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .container1 .nav form input{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .ni1 {
+    background: url(images/home.jpg) center /100% no-repeat;
+  }
+
+  .ni2 {
+    background: url(images/yae\ miko.jpg) center /100% no-repeat;
+  }
+
+  .ni3 {
+    background: url(images/doujin.jpg) center / 100% no-repeat;
+  }
+
+  .ni4 {
+    background: url(images/jav.jpg) center /100% no-repeat;
+  }
+}
+
+/*-------------------------------------------------Home----------------------------------------------------------------*/
+.homemaincontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+}
+
+.homemaincontainer .homecontainer .homeh1{
+  width: 100%;
+  height: 50%;
+  background: #121212;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 20px 0 20px 0;
+  padding: 20px 0 20px 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: medium;
+  cursor: default;
+}
+
+.homemaincontainer .homecontainer {
+  width: 30%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  border-radius: 8px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.homemaincontainer .homecontainer .card{
+  background: rgba(48, 48, 48, 0.119);
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 8px;
+  margin: 20px 0 20px 0;
+  transition: 0.5s;
+}
+
+.homemaincontainer .homecontainer .card .img{
+  width: 100%;
+  padding-top: 56.25%; 
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+}
+
+.homemaincontainer .homecontainer .card .img1{
+  background: url(images/nanjou.jpeg) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img2{
+  background: url(images/fleur.jfif) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img3{
+  background: url(images/masterpiece.jpg) top / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img4{
+  background: url(images/marine.jpg) top / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img5{
+  background: url(images/yoasobi\ gurashi.jfif) top / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img6{
+  background: url(images/mobydick.jfif) top / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img7{
+  background: url(images/stepmotherfriend.png) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img8{
+  background: url(images/doujin2.jfif) top / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img9{
+  background: url(images/jav4.jpg) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img10{
+  background: url(images/jav3.jpg) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img11{
+  background: url(images/jav2.jpg) center / 100% no-repeat;
+}
+.homemaincontainer .homecontainer .card .img12{
+  background: url(images/jav.jpg) center / 100% no-repeat;
+}
+
+.homemaincontainer .homecontainer .card .title{
+  margin: 20px 10px 20px 10px;
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+}
+
+.homemaincontainer .homecontainer a{
+  text-decoration: none;
+  cursor: default;
+}
+
+.homemaincontainer .homecontainer .card:hover .title{
+  color: rgb(0, 191, 255);
+}
+
+.homemaincontainer .homecontainer .card:hover{
+  box-shadow: 0 5px 15px rgba(255,255,255);
+}
+
+@media(max-width: 768px) {
+  .homemaincontainer .homecontainer{
+    width: 100%;
+  }
+  .homemaincontainer{
+    flex-direction: column;
+  }
+}
+
+.footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  background: #121212;
+  padding: 20px;
+  margin: 0;
+}
+
+footer{
+  width: 100%;
+  height: auto;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+.h6footer{
+  color: white;
+  background: rgba(0,0,0,0);
+  text-decoration: none;
+  text-align: center;
+  transition: 0.5s;
+  padding: 20px 0 20px 0;
+}
+
+
+/*------------------------------------------------------------------------------------------------------------*/
+/*------------------------------------------------------Hentai------------------------------------------------*/
+/*------------------------------------------------------------------------------------------------------------*/
+
+.hentaimaincontainer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  background: #0e0e0e;
+  width: 100%;
+  height: auto;
+  transition: 0.5s;
+  overflow-x: scroll;
+  scrollbar-color: transparent transparent;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  margin: 0;
+  padding: 0;
+}
+
+.hentaimaincontainer .hentaicontainer1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+  margin: 10px 0;
+  transition: 0.5s;
+  background: #121212;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaih1{
+  width: 100%;
+  height: 50%;
+  background: #121212;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
+  margin: 0;
+  padding: 20px 0 20px 0;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: medium;
+  cursor: default;
+}
+
+.hentaimaincontainer .hentaicontainer1 .title{
+  margin: 20px 10px;
+  width: 100%;
+  height: auto;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  pointer-events: none;
+  transition: 0.5s;
+  margin: 50px;
+  box-sizing: border-box;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px;
+  margin: 20px;
+  flex-direction: row;
+  overflow-x: auto;
+  scrollbar-color: #222222 #121212;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  width: 100%;
+  max-height: 30%;
+  height: auto;
+  transition: 0.5s;
+  box-sizing: border-box;
+  white-space: nowrap;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2::-webkit-scrollbar {
+  width: 2px;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img{
+  width: 100%;
+  padding-top: 70%; 
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 10px;
+  transition: 0.5s;
+  box-sizing: border-box;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  background: #121212;
+  margin: 10px 10px;
+  flex-direction: column;
+  scroll-snap-align: start;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: default;
+  white-space: nowrap;
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard:hover{
+  box-shadow: 0 5px 10px rgba(255,255,255);
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard:hover .title{
+  color: rgb(0, 191, 255);
+}
+
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img1{
+  background: url(images/nanjou.jpeg) center / 113% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img2{
+  background: url(images/fleur.jfif) center / 113% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img3{
+  background: url(images/masterpiece.jpg) top / 100% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img4{
+  background: url(images/marine.jpg) top / 100% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img5{
+  background: url(images/yoasobi\ gurashi.jfif) top / 100% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img6{
+  background: url(images/mobydick.jfif) top / 100% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img7{
+  background: url(images/stepmotherfriend.png) center / 132% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img8{
+  background: url(images/doujin2.jfif) top / 100% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img9{
+  background: url(images/jav4.jpg) center / 105% no-repeat;
+}
+.hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard .img10{
+  background: url(images/jav3.jpg) center / 105% no-repeat;
+}
+
+.scroll-left, .scroll-right{
+  border: none;
+  background: rgba(0,0,0,0.5);
+  cursor: default;
+  padding: 10px;
+  position: absolute;
+  font-size: xx-large;
+  padding: 20px 10px;
+  border-radius: 4px;
+  transition: 0.5s;
+  color: #888;
+  opacity: 0.5;
+}
+
+.scroll-left:hover, .scroll-right:hover{
+  box-shadow: 0 5px 15px #555;
+}
+
+.scroll-left{
+  left: 5px;
+}
+
+.scroll-right{
+  right: 5px;
+}
+
+.hentaimaincontainer .hentaicontainer1 .scroll-left,
+.hentaimaincontainer .hentaicontainer1 .scroll-right{
+  opacity: 1;
+}
+
+@media(max-width: 768px){
+  .hentaimaincontainer .hentaicontainer1 .hentaicontainer2 .hentaicard{
+    background: #1e1e1e;
+  }
+}

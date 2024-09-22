@@ -1,0 +1,139 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+
+body{
+  min-height: 1000vh;
+  background: #fff;
+  overflow: auto;
+  overflow-x: hidden;
+}
+*::-webkit-scrollbar{
+  width: 2px;
+}
+*::-webkit-scrollbar-track{
+  background: transparent;
+}
+*::-webkit-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-webkit-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-moz-scrollbar{
+  width: 2px;
+}
+*::-moz-scrollbar-track{
+  background: transparent;
+}
+*::-moz-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-moz-scrollbar-thumb:hover{
+  background: #222;
+}
+*::-ms-scrollbar{
+  width: 2px;
+}
+*::-ms-scrollbar-track{
+  background: transparent;
+}
+*::-ms-scrollbar-thumb{
+  background: #555;
+  border-radius: 12px;
+}
+*::-ms-scrollbar-thumb:hover{
+  background: #222;
+}
+
+.container{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container .searchnav{
+  width: 100%;
+  height: auto;
+  padding: 30px 40px;
+  background: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.container .searchnav form .input{
+  width: 100%;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: transparent;
+  background: rgba(0,0,0,0.2);
+}
+
+.container .searchnav form{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 25%;
+  padding: 0;
+}
+
+.container .searchnav .bi{
+  width: 100%;
+  height: auto;
+  color: #222;
+  font-size: xx-large;
+}
+
+.container .searchnav .bi:hover{
+  color: #888;
+}
+
+.container .searchnav .sidebarbtn{
+  border: transparent;
+  margin: 20px 30px;
+}
+
+.container .sidebar{
+  width: 10%;
+  height: 100vh;
+  transform: translateX(-200px);
+  background: #f0f0f0;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .sidebar ul .item{
+  width: 100%;
+  height: auto;
+  list-style: none;
+  margin: 30px 0;
+}
+
+.container .sidebar ul .item .bi{
+  width: 100%;
+  height: auto;
+  color: #222;
+  font-size: xx-large;
+}
+
+
